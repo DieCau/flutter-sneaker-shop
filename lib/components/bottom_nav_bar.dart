@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+// ignore: must_be_immutable
 class BottomNavBar extends StatelessWidget {
   
   void Function(int) onTabChange;
@@ -14,6 +15,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
+      // ignore: avoid_unnecessary_containers
       child: Container(
         child: GNav(
           color: Colors.grey[400],
