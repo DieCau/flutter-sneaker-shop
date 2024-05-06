@@ -28,7 +28,7 @@ class _ShopPageState extends State<ShopPage> {
   @override
   Widget build(BuildContext context) {
     return Consumer<Cart>(
-      builder: (context, value, child) => Column(
+      builder: (context, value, _) => Column(
         children: [
           Container(
             padding: const EdgeInsets.all(12),

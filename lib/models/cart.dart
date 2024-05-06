@@ -7,7 +7,7 @@ class Cart extends ChangeNotifier {
       name: 'Air Kirye', 
       price: '216', 
       imagePath: 'assets/images/nike1.png', 
-      description: 'The best shoe'
+      description: 'Bouncy is paired with soft yet supportive'
     ),
     Shoe(
       name: 'Air Max', 
@@ -36,19 +36,23 @@ class Cart extends ChangeNotifier {
   ];  
 
 
-  List<Shoe> useCart = [];
+  List<Shoe> userCart = [];
 
   List<Shoe> getShoeList() {
     return shoeShop;
   }
 
+  List<Shoe> getUserCart() {
+    return userCart;
+  }
+
   void addItemToCart(Shoe shoe) {
-    useCart.add(shoe);
+    userCart.add(shoe);
     notifyListeners();
   }
   
   void removeItemToCart(Shoe shoe) {
-    useCart.remove(shoe);
+    userCart.remove(shoe);
     notifyListeners();
   }
 
